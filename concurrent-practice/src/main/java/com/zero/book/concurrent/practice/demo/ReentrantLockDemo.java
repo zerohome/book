@@ -23,7 +23,7 @@ public class ReentrantLockDemo implements Runnable{
 	public void run() {
 		for (int i = 0; i < 10000000; i++) {
 			lock.lock();
-			lock.lock();//重入
+//			lock.lock();//重入
 			try {
 				count++;
 			} finally {
