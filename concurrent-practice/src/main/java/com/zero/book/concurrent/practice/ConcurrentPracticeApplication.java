@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ConcurrentPracticeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConcurrentPracticeApplication.class, args);
+		SpringApplication app = new SpringApplication(ConcurrentPracticeApplication.class);
+		app.run(args);
+//		SpringApplication.run(ConcurrentPracticeApplication.class, args);
 	}
 
 }
